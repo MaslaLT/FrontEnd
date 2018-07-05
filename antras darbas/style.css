@@ -71,8 +71,11 @@ tr:nth-child(even) {
     text-align: center;
 }
 .text_input{
-    width: 40%;
+    width: 45%;
     padding: 15px;
     border: none;
     border-bottom: solid aqua;
+}
+.text_input:first-child{
+    margin-right: 50px;
 }
