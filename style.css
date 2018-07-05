@@ -1,0 +1,60 @@
+html{
+    margin: -10px;
+}
+body{
+    background-image: url("img/mekong-green.png");
+    padding: 0px 300px 50px 300px;
+    box-sizing: border-box;
+}
+main{
+    height: 1000px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+header{
+    background-color: lightseagreen;
+    height: 300px;
+}
+#logo{
+    margin: 60px 0px 0px 100px;
+    float: left;
+
+}
+nav{
+    float: right;
+    margin: 130px;
+    font-size: 30px;
+    color:  black;
+}
+nav a{
+    text-decoration: none;
+    color: aqua;
+    margin: 10px;
+}
+#article_left{
+    border-right: solid 1px black;
+    padding: 30px;
+    letter-spacing: 1px;
+    float:left;
+    margin: 20px;
+    width: 280px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+#article_right{
+    letter-spacing: 1px;
+    float:left;
+    margin: 20px;
+    width: 450px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+
+}
