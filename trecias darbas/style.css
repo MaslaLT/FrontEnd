@@ -1,0 +1,17 @@
+aside{
+    width: 25%;
+    margine: 10px;
+    float: left;
+}
+#avatar{
+    position: relative;
+}
+img{
+    width:100%;
+}
+h1{
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    /*margin: 20px;*/
+}
