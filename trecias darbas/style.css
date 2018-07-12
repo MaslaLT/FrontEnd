@@ -1,10 +1,31 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#asideContacts{
+    padding: 15px;
+}
 aside{
-    width: 25%;
-    margine: 10px;
+    width: 33.3333%;
+    min-height: 500px;
     float: left;
+    border: blue 1px solid;
+}
+aside ul i{
+    padding: 10px;
+    color: #009688;
+}
+ul{
+    padding: 0px;
+}
+li {
+    list-style: none;
 }
 #avatar{
     position: relative;
+}
+section{
+    float: left;
+    border: red 1px solid;
 }
 img{
     width:100%;
@@ -14,4 +35,16 @@ h1{
     z-index: 1;
     bottom: 5%;
     /*margin: 20px;*/
+}
+footer{
+    color: white;
+    background-color: #009688;
+    width: 100%;
+    border: green 1px solid;
+    text-align: center;
+}
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
 }
