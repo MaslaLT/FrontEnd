@@ -7,7 +7,10 @@
     margin: 0;
 }
 .wrapper div{
-    background: yellow;
+    background: gold;
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
 }
 div:nth-child(1){
     grid-column: span 4;
