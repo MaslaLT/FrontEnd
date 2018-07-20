@@ -1,0 +1,24 @@
+.header_wrapper {
+  background: dimgrey; }
+
+header {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
+  header img {
+    width: 100px; }
+
+header nav {
+  color: white; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      display: inline; }
+
+footer {
+  background: lightblue; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,144 @@
+//header settigs
+
+$headerBackgroundColor: #242943;
+$BaseFontColor: white;
+$BaseFontSize: 10px;
+$menuFontsize: 12px;
+$headerBackgroundImage: url("img/header_foto.png");
+
+//main settings
+
+%bg_img {
+  background-size: cover;
+  background-position: center;
+}
+$main_img_1: url("img/eagle.jpg");
+$main_img_1_color: rgba(104, 195, 225, 0.85);
+$main_img_2: url("img/yacht.jpg");
+$main_img_2_color: rgba(104, 70, 225, 0.85);
+$main_img_3: url("img/church-3481187_1280.jpg");
+$main_img_3_color: rgba(193, 195, 71, 0.85);
+$main_img_4: url("img/dog-1168663_1280.jpg");
+$main_img_4_color: rgba(104, 195, 71, 0.85);
+$main_img_5: url("img/ship-3493887_1280.jpg");
+$main_img_5_color: rgba(170, 115, 0, 0.85);
+$main_img_6: url("img/woman-570883_1280.jpg");
+$main_img_6_color: rgba(255, 0, 0, 0.85);
+
+//header css
+body{
+  font-family: sans-serif;
+  color: $BaseFontColor;
+  font-size: $BaseFontSize;
+}
+.arrow{
+  font-size: 1.8em;
+}
+.menu{
+  //display: none;
+}
+header{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  text-transform:  uppercase;
+  font-size: $menuFontsize;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background-color: rgba(36,41,67,0.05);
+  min-width: 100px;
+}
+.header_wrapper{
+  background: linear-gradient(rgba(36,41,67,0.85),rgba(36,41,67,0.85)), url("img/header_foto.png");
+  background-size: cover;
+  background-position: center;
+  h1{
+    font-size: 23px;
+    padding: 20px;
+    border-bottom: 1.5px solid;
+    margin: 10vw 8vw;
+  }
+  p{
+    font-size: 9.5px;
+    font-weight: bold;
+    padding: 30px;
+    letter-spacing: 2px;
+    text-space: 10px;
+    line-height: 20px;
+  }
+  button{
+    width: 200px;
+    background: none;
+    padding: 20px;
+    border: 2px solid white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 30px;
+    margin-bottom: 100px;
+    color: $BaseFontColor;
+  }
+}
+header a:nth-child(1){
+  color: $BaseFontColor;
+  text-decoration: none;
+}
+header a:nth-child(2){
+  color: $BaseFontColor;
+  text-decoration: none;
+}
+strong{
+  border: solid 1px black;
+  padding: 5px 5px 5px 10px;
+  color: black;
+  background-color: white;
+}
+
+//main css
+
+.div_narrow{
+  height: 80vw;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.div_wide{
+  height: 80vw;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.main_images :nth-child(1){
+  @extend %bg_img;
+  background: linear-gradient($main_img_1_color,$main_img_1_color), $main_img_1;
+  background-size: cover;
+  background-position: center;
+}
+.main_images :nth-child(2){
+  @extend %bg_img;
+  background: linear-gradient($main_img_2_color,$main_img_2_color), $main_img_2;
+  background-size: cover;
+  background-position: center;
+}
+.main_images :nth-child(3){
+  @extend %bg_img;
+  background: linear-gradient($main_img_3_color,$main_img_3_color), $main_img_3;
+  background-size: cover;
+  background-position: center;
+}
+.main_images :nth-child(4){
+  @extend %bg_img;
+  background: linear-gradient($main_img_4_color,$main_img_4_color), $main_img_4;
+  background-size: cover;
+  background-position: center;
+}
+.main_images :nth-child(5){
+  @extend %bg_img;
+  background: linear-gradient($main_img_5_color,$main_img_5_color), $main_img_5;
+  background-size: cover;
+  background-position: center;
+}
+.main_images :nth-child(6){
+  @extend %bg_img;
+  background: linear-gradient($main_img_6_color,$main_img_6_color), $main_img_6;
+
+}

@@ -1,0 +1,105 @@
+.main_images :nth-child(1), .main_images :nth-child(2), .main_images :nth-child(3), .main_images :nth-child(4), .main_images :nth-child(5), .main_images :nth-child(6) {
+  background-size: cover;
+  background-position: center; }
+
+body {
+  font-family: sans-serif;
+  color: white;
+  font-size: 10px; }
+
+.arrow {
+  font-size: 1.8em; }
+
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background-color: rgba(36, 41, 67, 0.05);
+  min-width: 100px; }
+
+.header_wrapper {
+  background: linear-gradient(rgba(36, 41, 67, 0.85), rgba(36, 41, 67, 0.85)), url("img/header_foto.png");
+  background-size: cover;
+  background-position: center; }
+  .header_wrapper h1 {
+    font-size: 23px;
+    padding: 20px;
+    border-bottom: 1.5px solid;
+    margin: 10vw 8vw; }
+  .header_wrapper p {
+    font-size: 9.5px;
+    font-weight: bold;
+    padding: 30px;
+    letter-spacing: 2px;
+    text-space: 10px;
+    line-height: 20px; }
+  .header_wrapper button {
+    width: 200px;
+    background: none;
+    padding: 20px;
+    border: 2px solid white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 30px;
+    margin-bottom: 100px;
+    color: white; }
+
+header a:nth-child(1) {
+  color: white;
+  text-decoration: none; }
+
+header a:nth-child(2) {
+  color: white;
+  text-decoration: none; }
+
+strong {
+  border: solid 1px black;
+  padding: 5px 5px 5px 10px;
+  color: black;
+  background-color: white; }
+
+.div_narrow {
+  height: 80vw;
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+
+.div_wide {
+  height: 80vw;
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+
+.main_images :nth-child(1) {
+  background: linear-gradient(rgba(104, 195, 225, 0.85), rgba(104, 195, 225, 0.85)), url("img/eagle.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.main_images :nth-child(2) {
+  background: linear-gradient(rgba(104, 70, 225, 0.85), rgba(104, 70, 225, 0.85)), url("img/yacht.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.main_images :nth-child(3) {
+  background: linear-gradient(rgba(193, 195, 71, 0.85), rgba(193, 195, 71, 0.85)), url("img/church-3481187_1280.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.main_images :nth-child(4) {
+  background: linear-gradient(rgba(104, 195, 71, 0.85), rgba(104, 195, 71, 0.85)), url("img/dog-1168663_1280.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.main_images :nth-child(5) {
+  background: linear-gradient(rgba(170, 115, 0, 0.85), rgba(170, 115, 0, 0.85)), url("img/ship-3493887_1280.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.main_images :nth-child(6) {
+  background: linear-gradient(rgba(255, 0, 0, 0.85), rgba(255, 0, 0, 0.85)), url("img/woman-570883_1280.jpg"); }
+
+/*# sourceMappingURL=style.css.map */
