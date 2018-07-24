@@ -1,6 +1,11 @@
+html{
+  min-width: 350px;
+}
+
 //header settigs
 
 $headerBackgroundColor: #242943;
+$secondaryBackgroundColor: #393E55;
 $BaseFontColor: white;
 $BaseFontSize: 10px;
 $menuFontsize: 12px;
@@ -8,7 +13,7 @@ $headerBackgroundImage: url("img/header_foto.png");
 
 //main settings
 
-%bg_img {
+%bg_img{
   background-size: cover;
   background-position: center;
 }
@@ -35,15 +40,15 @@ body{
   font-size: 1.8em;
 }
 .menu{
-  //display: none;
+  display: none;
 }
 header{
   display: flex;
-  padding: 20px;
+  padding: 15px;
   justify-content: space-between;
   text-transform:  uppercase;
   font-size: $menuFontsize;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 4px;
   background-color: rgba(36,41,67,0.05);
   min-width: 100px;
@@ -53,30 +58,41 @@ header{
   background-size: cover;
   background-position: center;
   h1{
-    font-size: 23px;
-    padding: 20px;
+    font-size: 26px;
+    padding: 20px 0px;
     border-bottom: 1.5px solid;
-    margin: 10vw 8vw;
+    margin: 50px 20px 30px;
   }
   p{
     font-size: 9.5px;
     font-weight: bold;
-    padding: 30px;
+    padding: 5px 20px;
     letter-spacing: 2px;
     text-space: 10px;
-    line-height: 20px;
+    line-height: 18px;
   }
-  button{
-    width: 200px;
-    background: none;
-    padding: 20px;
-    border: 2px solid white;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 30px;
-    margin-bottom: 100px;
-    color: $BaseFontColor;
+}
+button{
+  width: 180px;
+  height: 40px;
+  background: none;
+  padding: 5px 15px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  margin: 20px;
+  margin-top: 5px;
+  margin-bottom: 90px;
+  color: $BaseFontColor;
+  a{
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
   }
+}
+button:hover{
+  outline-color: none;
+  border-color: yellow;
 }
 header a:nth-child(1){
   color: $BaseFontColor;
@@ -87,8 +103,9 @@ header a:nth-child(2){
   text-decoration: none;
 }
 strong{
+  font-size: 10px;
   border: solid 1px black;
-  padding: 5px 5px 5px 10px;
+  padding: 5px 5px 5px 7px;
   color: black;
   background-color: white;
 }
@@ -96,49 +113,171 @@ strong{
 //main css
 
 .div_narrow{
-  height: 80vw;
+  height: 295px;
   width: 100%;
   background-size: cover;
   background-position: center;
 }
 .div_wide{
-  height: 80vw;
+  height: 295px;
   width: 100%;
   background-size: cover;
   background-position: center;
 }
-.main_images :nth-child(1){
-  @extend %bg_img;
+.div_narrow.first{
   background: linear-gradient($main_img_1_color,$main_img_1_color), $main_img_1;
   background-size: cover;
   background-position: center;
 }
-.main_images :nth-child(2){
-  @extend %bg_img;
+.div_narrow.first:hover{
+  background: $main_img_1;
+  background-size: cover;
+  background-position: center;
+}
+.div_wide.first{
   background: linear-gradient($main_img_2_color,$main_img_2_color), $main_img_2;
   background-size: cover;
   background-position: center;
 }
-.main_images :nth-child(3){
-  @extend %bg_img;
+.div_wide.first:hover{
+  background: $main_img_2;
+  background-size: cover;
+  background-position: center;
+}
+.div_narrow.second{
   background: linear-gradient($main_img_3_color,$main_img_3_color), $main_img_3;
   background-size: cover;
   background-position: center;
 }
-.main_images :nth-child(4){
-  @extend %bg_img;
+.div_narrow.second:hover{
+  background: $main_img_3;
+  background-size: cover;
+  background-position: center;
+}
+.div_wide.second{
   background: linear-gradient($main_img_4_color,$main_img_4_color), $main_img_4;
   background-size: cover;
   background-position: center;
 }
-.main_images :nth-child(5){
-  @extend %bg_img;
+.div_wide.second:hover{
+  background: $main_img_4;
+  background-size: cover;
+  background-position: center;
+}
+.div_narrow.third{
   background: linear-gradient($main_img_5_color,$main_img_5_color), $main_img_5;
   background-size: cover;
   background-position: center;
 }
-.main_images :nth-child(6){
-  @extend %bg_img;
+.div_narrow.third:hover{
+  background: $main_img_5;
+  background-size: cover;
+  background-position: center;
+}
+.div_wide.third{
   background: linear-gradient($main_img_6_color,$main_img_6_color), $main_img_6;
-
+  background-size: cover;
+  background-position: center;
+}
+.div_wide.third:hover{
+  background: $main_img_6;
+  background-size: cover;
+  background-position: center;
+}
+.main_images {
+  a{
+    text-decoration: none;
+    color: $BaseFontColor;
+  }
+  h2{
+    font-size: 20px;
+    padding: 13px;
+    padding-left: 0px;
+    padding-top: 125px;
+    margin: 0 135px 0 25px;
+    border-bottom: 2px white solid;
+    text-transform: capitalize;
+  }
+  p{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+article{
+  height: 470px;
+  background: $secondaryBackgroundColor;
+  h2{
+    font-size: 20px;
+    padding: 50px 0px 13px 0px;
+    margin: 0 170px 0 25px;
+    border-bottom: 2px white solid;
+    text-transform: capitalize;
+  }
+  p{
+    font-size: 13px;
+    padding: 25px 20px;
+    padding-bottom: 10px;
+    letter-spacing: 1.2px;
+    line-height: 22px;
+    font-weight: lighter;
+  }
+  button{
+    //margin-bottom: 50px;
+  }
+}
+.contacts{
+  background: $headerBackgroundColor;
+  //height:400px;
+  form{
+    padding: 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    input{
+      font-size: 20px;
+      padding: 8px 15px;
+      margin: 10px 0 20px;
+      display: block;
+      width: 90%;
+      background: $secondaryBackgroundColor;
+      border: 0px;
+    }
+    input:focus{
+      outline-color: yellow;
+    }
+    textarea{
+      font-size: 20px;
+      padding: 8px 15px;
+      margin: 10px 0 20px;
+      display: block;
+      width: 90%;
+      height: 150px;
+      background: $secondaryBackgroundColor;
+      border: 0px;
+    }
+    textarea:focus{
+      outline-color: yellow;
+    }
+    button:first-of-type{
+      background: white;
+      color: black;
+    }
+    button:first-of-type:hover{
+      background: yellow;
+      color: black;
+    }
+    button{
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin: 5px 10px 5px 0;
+      padding: 10px 20px;
+      width: auto;
+    }
+  }
+}
+address{
+  background: $headerBackgroundColor;
 }
