@@ -226,5 +226,33 @@ article {
 
 address {
   background: #242943; }
+  address div {
+    border-top: 1px solid #393E55; }
+    address div h2 {
+      font-size: 18px;
+      padding: 45px 70px 10px 10px;
+      font-style: normal;
+      margin: 0px; }
+  address a {
+    color: white;
+    display: block;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-style: normal;
+    margin: 10px 120px 50px 70px;
+    border-bottom: 1px white dotted;
+    text-decoration: none;
+    transition: color 1s linear, border-bottom 3s; }
+  address a:hover {
+    color: yellow;
+    border-bottom: none;
+    text-decoration: none; }
+  address i {
+    color: #242943;
+    background: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 6px;
+    margin: 0 15px; }
 
 /*# sourceMappingURL=style.css.map */

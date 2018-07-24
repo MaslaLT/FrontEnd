@@ -280,4 +280,37 @@ article{
 }
 address{
   background: $headerBackgroundColor;
+  div{
+    border-top: 1px solid $secondaryBackgroundColor;
+    h2{
+      font-size: 18px;
+      padding: 45px 70px 10px 10px;
+      font-style: normal;
+      margin: 0px;
+    }
+  }
+  a{
+    color: $BaseFontColor;
+    display: block;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-style: normal;
+    margin: 10px 120px 50px 70px;
+    border-bottom: 1px white dotted;
+    text-decoration: none;
+    transition: color 1s linear, border-bottom 3s;
+  }
+  a:hover{
+    color: yellow;
+    border-bottom: none;
+    text-decoration: none;
+  }
+  i{
+    color: $headerBackgroundColor;
+    background: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 6px;
+    margin: 0 15px;
+  }
 }
